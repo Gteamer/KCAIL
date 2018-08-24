@@ -578,12 +578,22 @@ header.masthead .intro-text .intro-heading {
 .team-member {
   margin-bottom: 50px;
   text-align: center;
+  font-size: small;
 }
 
 .team-member img {
   width: 125px;
   height: 125px;
   border: 7px solid #fff;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  opacity: 1;
+}
+
+.team-member img:hover {
+  opacity: 0.7;
+  background: rgba(46, 80, 144, 0.9);
 }
 
 .team-member h4 {
@@ -594,6 +604,11 @@ header.masthead .intro-text .intro-heading {
 
 .team-member p {
   margin-top: 0;
+}
+
+.team-member ul {
+  position: absolute;
+  bottom: 0;
 }
 
 section#contact {
